@@ -35,16 +35,13 @@ var qna = [
 
 var name = rls.question('Please enter your name : ');
 var i;
-var s='*'; var u='-';
+var s='*';
 for(i=0; i<60; i++){
   s=s+'*';
-  u=u+'-';
 }
 
-console.log('\nQUIZ : How well do you know me. \n\n Hi',name,'!\n');
-console.log('\n',s)
-console.log('\nTo answer a question, simply enter the alphabet for the correct option.\n');
-console.log(u,'\n');
+console.log('\nQUIZ : How well do you know me. \n\n Hi',name,'! Give your best shot.');
+console.log('\n',s,'\n')
 for(var i=0; i<qna.length; i++){
   Game(qna[i].q, qna[i].a);
 }
